@@ -1,3 +1,4 @@
+dotenv.config();
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -8,7 +9,7 @@ import eventRoutes from "./routes/event.routes.js";
 import errorHandler from "./middleware/error.middleware.js";
 import connectDB from "./config/db.js";
 
-dotenv.config();
+
 
 connectDB();
 
